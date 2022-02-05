@@ -13,6 +13,12 @@ Install package using this command:
 In the directory were you want to include the `.gitignore` file
 run `gittyignore` to open a suite of interactive questions.
 
+## TODOS
+- ~~publish first package~~
+- run using bash - (probably a rewrite)
+- cli option to view list of available template
+
+
 ## License
 
 [CC0-1.0](./LICENSE).

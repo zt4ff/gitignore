@@ -19,6 +19,6 @@
     "typescript": "^4.5.5"
   },
   "bin": {
-    "gittyignore": "./dist/main"
+    "gittyignore": "./dist/main.js"
   }
 }

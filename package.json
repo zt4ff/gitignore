@@ -1,0 +1,19 @@
+{
+  "name": "gitignore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zt4ff/gitignore.git",
+  "author": "Kayode Oluwasegun <segunkayode00@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}

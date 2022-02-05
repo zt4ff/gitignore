@@ -4,7 +4,7 @@
   "main": "dist/main.js",
   "repository": "git@github.com:zt4ff/gitignore.git",
   "author": "Kayode Oluwasegun <segunkayode00@gmail.com>",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "dependencies": {
     "inquirer": "^8.2.0"
   },

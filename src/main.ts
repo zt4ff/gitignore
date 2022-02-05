@@ -18,7 +18,8 @@ async function main() {
   if (!shouldIncludeEditorConfig) {
     return generateIgnoreFile(generalType);
   }
-  const editorFilter = await alphabetPrompt();
+
+  const editorFilter = await alphabetPrompt(true);
   const editorType = await selectFromOptions(
     "Select the Editor type",
     editorOptions[editorFilter]

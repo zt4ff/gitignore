@@ -13,7 +13,12 @@ const generateIgnoreFile = (generalType: string, editorType?: string) => {
       if (er1) throw new Error(er1.message);
       if (editorType) {
         const editorConfig = await fsPromise.readFile(
-          path.resolve(__dirname, "..", "editor", `${editorType}.gitignore`)
+          path.resolve(
+            __dirname,
+            "..",
+            "editor_type",
+            `${editorType}.gitignore`
+          )
         );
 
         fs.writeFile(fd, editorConfig, (er2) => {
@@ -23,7 +28,8 @@ const generateIgnoreFile = (generalType: string, editorType?: string) => {
 
       fs.close(fd, (er) => {
         if (er) throw new Error(er.message);
-        console.log("closed");
+
+        console.log("Gitignore file created successfully");
       });
     });
   });

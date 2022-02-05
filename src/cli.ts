@@ -13,7 +13,7 @@ async function selectFromOptions(message: string, choices: string[]) {
   return answer;
 }
 
-async function alphabetPrompt() {
+async function alphabetPrompt(editorType: boolean = false) {
   const { answer } = await inquirer.prompt([
     {
       type: "input",
@@ -21,8 +21,16 @@ async function alphabetPrompt() {
       message:
         "Enter the initial letter of the language, framework, tools e.t.c",
 
-      validate: (input) =>
-        /^[a-zA-Z]$/.test(input) ? true : "Provide a character between a - z",
+      validate: (input) => {
+        if (editorType) {
+          return /^[a-gA-Gi-pI-Pr-tR-Tv-xV-X]$/.test(input)
+            ? true
+            : `No list under the entry ${input} `;
+        }
+        return /^[a-zA-Z]$/.test(input)
+          ? true
+          : "Provide a character between a - z";
+      },
     },
   ]);
 

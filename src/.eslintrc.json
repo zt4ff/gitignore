@@ -1,6 +1,5 @@
 {
   "env": {
-    "browser": true,
     "es2021": true
   },
   "extends": ["airbnb-base"],
@@ -10,6 +9,13 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "quotes": ["warn", "double"]
+    "quotes": ["warn", "double"],
+    "implicit-arrow-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "quote-props": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-console": "off",
+    "comma-dangle": "off"
   }
 }
